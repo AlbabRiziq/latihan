@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang=>
+  <head>
+    <title>Tes</title>
+    <style type="text/css">
+    body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: #34495e;
+    }
+    .box{
+    width: 300px;
+    padding: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #191919;
+    text-align: center;
+    }
+    .box h1{
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    }
+    .box input[type = "text"],.box input[type="text"]{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    }
+    
+    button{
+    border:0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding: 14px 40px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    }
+    .box input[type = "submit"]:hover{
+    background: #2ecc71;
+}
+   
+	h6{
+	
+	text-align: ;
+	font-size:1px;
+	
+	}
+   h1{
+   font-family: papyrus;
+   
+   }
+    
+   .berhasil{
+   
+   background: #34495e;
+   
+   }
+    
+    </style>
+  </head>
+  <body bicolor="#34495e">
+  
+
+
+
+<form class="box" name="percobaan">
+<h1>Tessssss</h1>
+<input type="text" name="h" placeholder="Tulis Terserah Kamu">
+  <input class="terserah" type="text" name="h1" placeholder="Tulis Terserah Kamu">
+  <input type="text" name="h2" placeholder="Tulis Terserah Kamu">
+  <button type="submit">kirim</button>
+  
+</form>
+<marquee><h6>Albab Riziq</h6></marquee>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxE6Te3i_-eyN4RsAy20KQaj31SLqxIIFaOS-VczOYMFt2jkpx8HUPDCwueVthB8YE1HQ/exec'
+  const form = document.forms['percobaan']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'post', body: new FormData(form)})
+      .then(response => console.log('Success!', response), document.write('<body bgcolor="#3498db"> <h1 style=" border-color:black; background: none; display:; margin: 50% auto; text-align: center; border: 2px solid black; padding: 14px 10px; width:; outline: none; color: black;}">Berhasil dikirimkan gan</h1> </body>'))
+      .catch(error => console.error('Error!', error.message))
+ })
+</script>
+
+  </body>
+</html>
