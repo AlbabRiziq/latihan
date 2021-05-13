@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    
+    <style type="text/css" media="all">
+      
+      .judul{
+       margin: auto;
+       color: white;
+      }
+      
+      .gambar{
+        
+        height: 300px;
+        width:300px;
+      }
+      
+      .haha{
+        
+        text-align: center;
+        background-color: #AD9B3F;
+      }
+      
+      textarea{
+        
+        border: 19 solid black;
+        
+        
+      }
+      
+      body{
+        
+        background: #332E11;
+        
+        
+      }
+      
+      .ya{
+          
+         color: white;
+         
+       }
+       
+       .navbar{
+         
+         background: black;
+         
+       }
+      
+    </style>
+  </head>
+  <body bgcolor="grey">
+
+    <nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <h1 class="judul">Albab Riziq</h1>
+</nav>
+    
+    <h1 align="center" class="ya">Nyinyir Generator</h1>
+    <div class="jumbotron jumbotron-fluid">
+  <div class="container haha">
+    
+    <img class="gambar" src="Nyinyir.jpg" alt="chef arnold sama bocil pramuka lagi ekspresi nyinir" />
+    <form name="ya">
+      <p>Masukan Kalimat</p>
+      <textarea name="kata" id= rows="8" cols="40"></textarea>
+      <br><br>
+      <p>Hasil</p>
+      <textarea name="haha" id= rows="8" cols="40"></textarea>
+    </form>
+    
+    <input class="" type="button" name="konversi" id="" value="konversi" onclick="konversi()">
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+    <script>
+   
+      
+      function konversi(){
+      let hasil, kalimat;
+      
+      kalimat = (document.ya.kata.value);
+      
+      hasil = kalimat.replace(/a|i|u|e|o/gi,"i") 
+      
+      document.ya.haha.value=hasil
+    }
+    </script>
+
+  </body>
+</html>
